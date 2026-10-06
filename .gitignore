@@ -1,0 +1,13 @@
+frontend/AeroNav-Frontend/node_modules/
+frontend/AeroNav-Frontend/dist/
+
+backend/AeroNav-Backend/__pycache__/
+backend/AeroNav-Backend/.venv/
+backend/AeroNav-Backend/venv/
+
+.env
+*.env
+
+.vscode/
+.DS_Store
+Thumbs.db
