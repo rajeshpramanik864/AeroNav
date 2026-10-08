@@ -4,7 +4,7 @@ import{Canvas,useFrame}from'@react-three/fiber';
 import{OrbitControls,Float,Line,Text}from'@react-three/drei';
 import{Activity,AlertTriangle,BatteryCharging,Bot,Camera,Crosshair,Gauge,Globe2,Layers3,Map,Menu,Navigation2,Radar,Radio,Route,ShieldCheck,Target,WifiOff,X,Zap,RefreshCw,PlaneLanding}from'lucide-react';
 import'./style.css';
-const API='http://127.0.0.1:8000';
+const API='https://aeronav-jnjs.onrender.com';
 const NAV=[['Home','home'],['Live Mission','mission'],['3D Tracking','tracking'],['Detection','detection'],['Navigation','navigation'],['Simulation','simulation'],['Analytics','analytics'],['About','about'],['Team','team']];
 async function get(path){const r=await fetch(API+path);if(!r.ok)throw Error(await r.text());return r.json()}
 async function post(path,body){const r=await fetch(API+path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});if(!r.ok)throw Error(await r.text());return r.json()}
